@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ashish Verma | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f1f1f1;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0077cc;
+      margin-bottom: 15px;
+    }
+
+    .skills li {
+      display: inline-block;
+      background: #0077cc;
+      color: white;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 4px;
+    }
+
+    .project {
+      background: #fff;
+      padding: 15px;
+      border-left: 4px solid #0077cc;
+      margin-bottom: 20px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ashish Verma</h1>
+    <p>Software Engineering Student | Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a software engineering student with a strong interest in building user-friendly web apps and solving real-world problems. I enjoy working in teams and constantly learning new technologies.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Library Management System</h3>
+      <p>Web app to manage books, users, borrowing & returns. Built using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="project">
+      <h3>Magazine Management Website</h3>
+      <p>Digital magazine platform for browsing, subscribing and reading content. Focus on responsive design and search functionality.</p>
+    </div>
+
+    <div class="project">
+      <h3>Emergency Portal</h3>
+      <p>One-click emergency service access with real-time alerts and location tracking. Built using HTML, CSS, and JS.</p>
+    </div>
+
+    <div class="project">
+      <h3>RealEstatePro Website</h3>
+      <p>Platform for buyers, sellers, and agents to connect. Built with clean UI using HTML, CSS, and JS.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="thanksMsg"></p>
+  </section>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const msg = document.getElementById("thanksMsg");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      msg.innerText = "Thanks for reaching out!";
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
+ 
