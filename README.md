@@ -16,7 +16,7 @@ This is my personal responsive portfolio website created using **HTML**, **CSS**
 
 ## Live Demo
 
-Visit: https://Ashish-verma476.github.io/ashish-portfolio/
+Visit: https://Ashish-verma476.github.io/Ashish-portfolio/
 
 ## Contact Me
 
